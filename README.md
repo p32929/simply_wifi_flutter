@@ -1,5 +1,7 @@
 ![Simply Wifi Flutter](https://user-images.githubusercontent.com/6418354/104330981-c2c1f800-5518-11eb-84a0-7ab9e0b97354.png)
 
+## Simply Wifi Flutter
+
 A simplified version of the Wifi Iot package.
 ( This is a wrapper for the https://pub.dev/packages/wifi_iot package )
 
