@@ -1,6 +1,4 @@
-![Simply Wifi Flutter](https://www.flaticon.com/svg/vstatic/svg/929/929464.svg?token=exp=1610464009~hmac=257e54da522112452691f1f4831713e8 | width=100)
-
-<img src="https://www.flaticon.com/svg/vstatic/svg/929/929464.svg?token=exp=1610464009~hmac=257e54da522112452691f1f4831713e8" width="200" />
+![Simply Wifi Flutter](https://user-images.githubusercontent.com/6418354/104330981-c2c1f800-5518-11eb-84a0-7ab9e0b97354.png)
 
 A simplified version of the Wifi Iot package.
 ( This is a wrapper for the https://pub.dev/packages/wifi_iot package )
