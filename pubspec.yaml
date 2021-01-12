@@ -1,8 +1,8 @@
 name: simply_wifi
-description: A new Flutter package project.
-version: 0.0.1
-author:
-homepage:
+description: A simplified version of the Wifi Iot package.
+version: 1.0.1
+author: p32929
+homepage: https://github.com/p32929/simply_wifi_flutter
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
