@@ -29,6 +29,10 @@ If you like my works and want to support me/my works, feel free to support or do
 
 ### How to use
 
+First of all:
+* You need to set the `compileSdkVersion`and `targetSdkVersion` to `28` in `android/app/build.gradle` ( or you may call it the App Level Gradle file )
+* It won't work properly in v29 ( Android 10 or above )
+
 #### Initialize the package
 
 `SimplyWifi.init();`
