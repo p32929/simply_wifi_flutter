@@ -1,4 +1,4 @@
-## Simply Wifi Flutter
+![Simply Wifi Flutter](https://www.flaticon.com/svg/vstatic/svg/929/929464.svg)
 
 A simplified version of the Wifi Iot package.
 ( This is a wrapper for the https://pub.dev/packages/wifi_iot package )
