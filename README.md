@@ -1,4 +1,4 @@
-![Simply Wifi Flutter](https://www.flaticon.com/svg/vstatic/svg/929/929464.svg)
+![Simply Wifi Flutter](https://www.flaticon.com/svg/vstatic/svg/929/929464.svg?token=exp=1610464009~hmac=257e54da522112452691f1f4831713e8)
 
 A simplified version of the Wifi Iot package.
 ( This is a wrapper for the https://pub.dev/packages/wifi_iot package )
