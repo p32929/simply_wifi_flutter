@@ -6,66 +6,80 @@ class SimplyWifi {
   static bool _isEnabled = false;
   static bool _isConnected = false;
 
-  static _showWifiSsids() {
+  static void _showWifiSsids() {
     for (int i = 0; i < _wifiNetworks.length; i++) {
       print("${i.toString()} -- ${_wifiNetworks[i].ssid}");
     }
+    print("Done");
   }
 
-  static init() async {
+  static Future<bool> init() async {
     _isEnabled = await WiFiForIoTPlugin.isEnabled();
     _isConnected = await WiFiForIoTPlugin.isConnected();
+
     try {
       _wifiNetworks = await WiFiForIoTPlugin.loadWifiList();
+      _showWifiSsids();
+      return Future.value(true);
     } on PlatformException {
       _wifiNetworks = List<WifiNetwork>();
+      _showWifiSsids();
+      return Future.value(false);
     }
-    _showWifiSsids();
   }
 
-  static turnOnWifi() {
+  static Future<bool> turnOnWifi() async {
     if (!_isEnabled) {
-      WiFiForIoTPlugin.setEnabled(true);
+      _isEnabled = true;
+      await WiFiForIoTPlugin.setEnabled(true);
+      return Future.value(true);
     }
-    print("ON");
+    return Future.value(false);
   }
 
-  static turnOffWifi() {
+  static Future<bool> turnOffWifi() async {
     if (_isEnabled) {
-      WiFiForIoTPlugin.setEnabled(false);
+      _isEnabled = false;
+      await WiFiForIoTPlugin.setEnabled(false);
+      return Future.value(true);
     }
-    print("OFF");
+    return Future.value(true);
   }
 
-  static getListOfWifis() async {
+  static Future<List<WifiNetwork>> getListOfWifis() async {
     try {
       _wifiNetworks = await WiFiForIoTPlugin.loadWifiList();
     } on PlatformException {
       _wifiNetworks = List<WifiNetwork>();
     }
     _showWifiSsids();
-    return _wifiNetworks;
+    return Future.value(_wifiNetworks);
   }
 
-  static connectWifiByIndex(int index, {String password}) async {
+  static Future<bool> connectWifiByIndex(int index, {String password}) async {
     _isConnected = await WiFiForIoTPlugin.connect(_wifiNetworks[index].ssid,
         security: NetworkSecurity.WPA, password: password);
 
     if (_isConnected) {
       print("Connected");
+      return Future.value(true);
     } else {
       print("Failed to connect");
+      return Future.value(false);
     }
   }
 
-  static connectWifiByName(String wifiName, {String password}) async {
+  static Future<bool> connectWifiByName(String wifiName,
+      {String password}) async {
     _isConnected = await WiFiForIoTPlugin.connect(wifiName,
         security: NetworkSecurity.WPA, password: password);
 
     if (_isConnected) {
       print("Connected");
+      return Future.value(true);
     } else {
       print("Failed to connect");
+      return Future.value(false);
     }
   }
 

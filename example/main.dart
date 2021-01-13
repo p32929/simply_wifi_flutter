@@ -1,7 +1,7 @@
 import 'package:simply_wifi/simply_wifi.dart';
 import 'package:wifi_iot/wifi_iot.dart';
 
-void main() {
+Future<void> main() async {
   // Must call before doing anything else
   // It takes location permission on the run time
   // also does some unknown things :/
@@ -14,7 +14,7 @@ void main() {
   SimplyWifi.turnOffWifi();
 
   // To get the list of Wifis
-  List<WifiNetwork> _wifiNetworks = SimplyWifi.getListOfWifis();
+  List<WifiNetwork> _wifiNetworks = await SimplyWifi.getListOfWifis();
 
   // To connect a wifi from _wifiNetworks list by index
   int indexNumber = 0;
