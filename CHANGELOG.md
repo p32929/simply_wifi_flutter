@@ -2,4 +2,7 @@
 Created the SimplyWifi class initially
 
 ## 1.0.2
-Haven't done it yet
+Updated SimplyWifi class with Futures
+
+## 1.0.3
+Not sure
