@@ -87,9 +87,11 @@ SimplyWifi.connectWifiByName(wifiName, password: passwordOfTheWifi);
 
 All the functions ( except `SimplyWifi.disconnectWifi()` ) returns a future. So, you can call them like this:
 
-`SimplyWifi.anyFunctionMentionedABove(necessaryParameters).then((value){
+```
+SimplyWifi.anyFunctionMentionedABove(necessaryParameters).then((value){
   // do something when done
-})`
+})
+```
 
 or
 

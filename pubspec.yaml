@@ -1,6 +1,6 @@
 name: simply_wifi
 description: A simplified version of the Wifi Iot package to make connecting, disconnecting and a lot of things related to wifi easier in flutter.
-version: 1.0.3
+version: 1.0.4
 homepage: https://github.com/p32929/simply_wifi_flutter
 
 environment:
