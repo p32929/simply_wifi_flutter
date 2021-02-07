@@ -5,4 +5,17 @@ Created the SimplyWifi class initially
 Updated SimplyWifi class with Futures
 
 ## 1.0.3
-Not sure
+Added something
+
+## 1.0.4
+Updated something
+
+## 1.0.5
+Updated something
+
+## 1.0.6
+Updated something
+
+## 1.0.7
+Updated something
+
