@@ -91,12 +91,12 @@ All the functions ( except `SimplyWifi.disconnectWifi()` ) returns a future. So,
 SimplyWifi.anyFunctionMentionedABove(necessaryParameters).then((value){
   // do something when done
 })
-```
+```b
 
 or
 
 ```
-await SimplyWifi.anyFunctionMentionedABove(necessaryParameters);
+await SimplyWifi.anyFunctionMentionedAbove(necessaryParameters);
 // do something when done
 ```
 
