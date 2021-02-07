@@ -51,7 +51,7 @@ First of all:
 
 `List<WifiNetwork> _wifiNetworks = SimplyWifi.getListOfWifis();`
 
-#### Connect a wifi from \_wifiNetworks list by index
+#### Connect a wifi from _wifiNetworks list by index
 
 ```
 int indexNumber = 0;
@@ -74,6 +74,29 @@ SimplyWifi.connectWifiByName(wifiName, password: passwordOfTheWifi);
 #### Disconnect the wifi
 
 `SimplyWifi.disconnectWifi();`
+
+### Forget wifi by its name ( SSID )
+
+`SimplyWifi.forgetWifiByWifiName(wifiName);`
+
+### Forget a wifi from _wifiNetworks list by index
+
+`SimplyWifi.forgetWifiByIndex(index)`
+
+### Footnote
+
+All the functions ( except `SimplyWifi.disconnectWifi()` ) returns a future. So, you can call them like this:
+
+`SimplyWifi.anyFunctionMentionedABove(necessaryParameters).then((value){
+  // do something when done
+})`
+
+or
+
+```
+await SimplyWifi.anyFunctionMentionedABove(necessaryParameters);
+// do something when done
+```
 
 #### Thanks
 
