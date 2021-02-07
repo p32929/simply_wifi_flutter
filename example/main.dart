@@ -28,5 +28,11 @@ Future<void> main() async {
   // To disconnect the wifi
   SimplyWifi.disconnectWifi();
 
+  // To forget a wifi from _wifiNetworks list by index
+  SimplyWifi.forgetWifiByIndex(0);
+
+  // To forget a wifi by name ( SSID )
+  SimplyWifi.forgetWifiByWifiName("Name");
+
   // And that's it my friend :)
 }
