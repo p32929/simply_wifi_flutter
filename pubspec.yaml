@@ -52,3 +52,6 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+
+funding:
+  - https://www.buymeacoffee.com/p32929
