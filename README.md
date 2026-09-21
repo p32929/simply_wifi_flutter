@@ -16,19 +16,6 @@ On pub.dev: **[simply_wifi](https://pub.dev/packages/simply_wifi)**
 - **Futures everywhere** (except `disconnectWifi()`), so `await` works as you'd expect
 - Asks for the location permission it needs during `init()`
 
-## Share
-
-Sharing with your friends is just one click away from here
-
-[![facebook](https://image.flaticon.com/icons/png/32/124/124010.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/p32929/simply_wifi_flutter)
-[![twitter](https://image.flaticon.com/icons/png/32/124/124021.png)](https://twitter.com/intent/tweet?source=https://github.com/p32929/simply_wifi_flutter)
-[![tumblr](https://image.flaticon.com/icons/png/32/124/124012.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/simply_wifi_flutter)
-[![pocket](https://image.flaticon.com/icons/png/32/732/732238.png)](https://getpocket.com/save?url=https://github.com/p32929/simply_wifi_flutter)
-[![pinterest](https://image.flaticon.com/icons/png/32/124/124039.png)](https://pinterest.com/pin/create/button/?url=https://github.com/p32929/simply_wifi_flutter)
-[![reddit](https://image.flaticon.com/icons/png/32/2111/2111589.png)](https://www.reddit.com/submit?url=https://github.com/p32929/simply_wifi_flutter)
-[![linkedin](https://image.flaticon.com/icons/png/32/1409/1409945.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/p32929/simply_wifi_flutter)
-[![whatsapp](https://image.flaticon.com/icons/png/32/733/733585.png)](https://api.whatsapp.com/send?text=https://github.com/p32929/simply_wifi_flutter)
-
 ## How to use
 
 First of all:
